@@ -1,0 +1,253 @@
+# React + Vite Template
+
+A modern, production-ready template for building React applications with TypeScript, Vite, and a comprehensive set of tools and libraries.
+
+## 🚀 Features
+
+- **⚡ Vite** - Lightning-fast development with Hot Module Replacement (HMR)
+- **⚛️ React 19** - Latest React with modern hooks and features
+- **📘 TypeScript** - Type safety and better developer experience
+- **🎨 Tailwind CSS** - Utility-first CSS framework with custom configuration
+- **🎭 Shadcn/ui** - Beautiful, accessible, and customizable UI components
+- **🌐 TanStack Router** - Type-safe routing with file-based routing
+- **🌍 i18next** - Internationalization (English & German included)
+- **🌙 Dark Mode** - Seamless theme switching with next-themes
+- **✨ Framer Motion** - Smooth animations and transitions
+- **📦 Component Library** - Pre-built UI components (Buttons, Inputs, Select, Tooltip, Toast, etc.)
+- **🔍 Lucide Icons** - Beautiful, consistent icon set
+- **🎯 State Management** - Zustand for global state
+- **📝 Forms** - React Hook Form with Zod validation
+- **🌐 HTTP Client** - Axios pre-configured
+- **🔧 ESLint** - Code quality and consistency
+
+## 📦 Tech Stack
+
+### Core
+- React 19.1.1
+- TypeScript 5.9.3
+- Vite 7.1.7
+- pnpm (package manager)
+
+### UI & Styling
+- Tailwind CSS 4.1.14
+- Radix UI (Dropdown, Select, Tooltip)
+- shadcn/ui components
+- next-themes (dark mode)
+- Framer Motion 12.23.22
+- Lucide React 0.545.0
+
+### Routing & State
+- TanStack Router 1.132.47
+- Zustand 5.0.8
+
+### Forms & Validation
+- React Hook Form 7.64.0
+- Zod 4.1.12
+- @hookform/resolvers 5.2.2
+
+### Internationalization
+- i18next 25.5.3
+- react-i18next 16.0.0
+- i18next-browser-languagedetector 8.2.0
+
+### HTTP & Utils
+- Axios 1.12.2
+- clsx 2.1.1
+- tailwind-merge 3.3.1
+- class-variance-authority 0.7.1
+
+### Notifications
+- Sonner 2.0.7
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm (recommended) or npm/yarn
+
+### Installation
+
+1. Clone or download this template:
+```bash
+git clone https://github.com/73gon/template-react.git
+cd template
+```
+
+2. Install dependencies:
+```bash
+pnpm install
+```
+
+3. Install the TanStack Router plugin:
+```bash
+pnpm add -D @tanstack/router-plugin
+```
+
+4. Start the development server:
+```bash
+pnpm dev
+```
+
+5. Open your browser and navigate to `http://localhost:5173`
+
+## 📝 Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm lint` - Run ESLint
+
+## 📁 Project Structure
+
+```
+template/
+├── public/              # Static assets
+├── src/
+│   ├── assets/         # Images, fonts, etc.
+│   ├── components/     # React components
+│   │   ├── ui/        # Shadcn/ui components
+│   │   ├── darkmode.tsx
+│   │   └── Home.tsx   # Main showcase page
+│   ├── languages/      # i18n translations
+│   │   ├── en.json
+│   │   └── de.json
+│   ├── lib/           # Utility functions
+│   │   ├── i18n.ts   # i18n configuration
+│   │   └── utils.ts  # Helper functions
+│   ├── routes/        # TanStack Router routes
+│   │   ├── __root.tsx
+│   │   └── index.tsx
+│   ├── App.tsx        # Main app component
+│   ├── main.tsx       # Entry point
+│   ├── router.ts      # Router configuration
+│   └── routeTree.gen.ts # Generated route tree
+├── components.json     # Shadcn/ui config
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+## 🎨 UI Components
+
+This template includes the following pre-built components:
+
+- **Button** - Multiple variants (default, destructive, outline, secondary, ghost, link) and sizes
+- **Input** - Text inputs with proper styling
+- **Textarea** - Multi-line text input
+- **Select** - Dropdown select with Radix UI
+- **Tooltip** - Hover tooltips
+- **Toast** - Notifications with Sonner
+- **Dropdown Menu** - Context menus and dropdowns
+- **Dark Mode Toggle** - Theme switcher
+
+All components are fully typed, accessible, and customizable.
+
+## 🌍 Internationalization
+
+The template supports multiple languages out of the box:
+- English (en)
+- German (de)
+
+Add more languages by creating new JSON files in `src/languages/` and importing them in `src/lib/i18n.ts`.
+
+## 🌙 Dark Mode
+
+Dark mode is implemented using `next-themes` and supports:
+- Light theme
+- Dark theme
+- System preference
+
+Toggle between themes using the `ModeToggle` component.
+
+## 🧭 Routing
+
+TanStack Router provides type-safe, file-based routing. Routes are defined in the `src/routes/` directory:
+
+- `__root.tsx` - Root layout with router devtools
+- `index.tsx` - Home page route
+
+Add new routes by creating files in the `routes` directory. The route tree is automatically generated by the TanStack Router plugin.
+
+## 🎯 State Management
+
+Zustand is included for global state management. Create stores in a new `src/stores/` directory as needed.
+
+## 📝 Forms & Validation
+
+Use React Hook Form with Zod for form handling:
+
+```tsx
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod';
+
+const schema = z.object({
+  email: z.string().email(),
+});
+
+const { register, handleSubmit } = useForm({
+  resolver: zodResolver(schema),
+});
+```
+
+## 🔧 Configuration
+
+### Tailwind CSS
+Configure Tailwind in `tailwind.config.js` or through the `@tailwindcss/vite` plugin.
+
+### Shadcn/ui
+Component configuration is in `components.json`. Add new components with:
+```bash
+npx shadcn@latest add [component-name]
+```
+
+### ESLint
+ESLint rules are configured in `eslint.config.js`.
+
+## 📦 Building for Production
+
+```bash
+pnpm build
+```
+
+The build output will be in the `dist` directory, ready for deployment.
+
+## 🚀 Deployment
+
+This template can be deployed to any static hosting service:
+- Vercel
+- Netlify
+- GitHub Pages
+- Cloudflare Pages
+- AWS S3 + CloudFront
+
+## 🤝 Contributing
+
+Feel free to customize this template for your needs. Some suggestions:
+- Add more UI components
+- Implement authentication
+- Add API integration examples
+- Create more routes
+- Add unit tests (Vitest recommended)
+- Add E2E tests (Playwright/Cypress)
+
+## 📄 License
+
+This template is free to use for personal and commercial projects.
+
+## 🙏 Acknowledgments
+
+Built with amazing open-source projects:
+- [React](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [TanStack Router](https://tanstack.com/router)
+- [Radix UI](https://www.radix-ui.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+---
+
+**Happy coding! 🎉**
