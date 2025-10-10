@@ -2,6 +2,217 @@
   "title": "React + Vite Template",
   "subtitle": "A comprehensive starter template with modern tooling",
   "description": "This is a production-ready template built with modern web technologies. It includes routing, theming, internationalization, and a comprehensive UI component library. Perfect for kickstarting your next project!",
+  "meta": {
+    "name": "Your Name",
+    "role": "Full Stack Developer",
+    "location": "San Francisco, CA",
+    "description": "Building exceptional digital experiences with modern web technologies."
+  },
+  "nav": {
+    "home": "Home",
+    "education": "Education",
+    "experience": "Experience",
+    "certifications": "Certifications",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Hi, I'm Your Name. I build amazing web applications.",
+    "intro": "A passionate full-stack developer specializing in creating beautiful, performant, and user-friendly digital experiences. I love turning complex problems into simple, elegant solutions.",
+    "availability": "Currently available for hire"
+  },
+  "stats": {
+    "experience": "5+ Years",
+    "projects": "50+ Projects",
+    "certified": "10+ Certified"
+  },
+  "actions": {
+    "hireMe": "Hire Me",
+    "downloadCv": "Download CV",
+    "viewProject": "View Project",
+    "sendMessage": "Send Message"
+  },
+  "education": {
+    "title": "Education",
+    "entries": [
+      {
+        "title": "Bachelor of Science in Computer Science",
+        "institution": "University of Technology",
+        "period": "2015 - 2019",
+        "summary": "Focused on software engineering, algorithms, and data structures. Graduated with honors and completed a thesis on distributed systems and microservices architecture."
+      },
+      {
+        "title": "Master of Science in Software Engineering",
+        "institution": "Tech Institute",
+        "period": "2019 - 2021",
+        "summary": "Advanced studies in cloud computing, machine learning, and modern web architectures. Research focused on scalable application design and performance optimization."
+      },
+      {
+        "title": "Full Stack Web Development Bootcamp",
+        "institution": "Code Academy",
+        "period": "2018",
+        "summary": "Intensive 12-week program covering modern JavaScript frameworks, databases, and deployment strategies. Built 10+ real-world applications."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Work Experience",
+    "entries": [
+      {
+        "role": "Senior Full Stack Developer",
+        "company": "Tech Solutions Inc.",
+        "period": "2021 - Present",
+        "description": "Leading development of enterprise web applications using React, Node.js, and cloud technologies. Mentoring junior developers and architecting scalable solutions for Fortune 500 clients."
+      },
+      {
+        "role": "Full Stack Developer",
+        "company": "Digital Innovations Co.",
+        "period": "2019 - 2021",
+        "description": "Developed and maintained multiple client-facing applications. Implemented CI/CD pipelines and reduced deployment time by 60%. Collaborated with cross-functional teams to deliver high-quality products."
+      },
+      {
+        "role": "Frontend Developer",
+        "company": "Creative Web Studio",
+        "period": "2018 - 2019",
+        "description": "Built responsive and accessible web interfaces using modern frameworks. Improved page load times by 40% through optimization techniques. Worked closely with designers to implement pixel-perfect UIs."
+      },
+      {
+        "role": "Junior Developer",
+        "company": "StartUp Ventures",
+        "period": "2017 - 2018",
+        "description": "Contributed to the development of a SaaS platform. Gained experience in agile methodologies and version control. Participated in code reviews and team knowledge sharing sessions."
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications",
+    "entries": [
+      {
+        "name": "AWS Certified Solutions Architect",
+        "issuedBy": "Amazon Web Services",
+        "year": "2023"
+      },
+      {
+        "name": "Google Cloud Professional Developer",
+        "issuedBy": "Google Cloud",
+        "year": "2022"
+      },
+      {
+        "name": "React Advanced Certification",
+        "issuedBy": "Meta",
+        "year": "2022"
+      },
+      {
+        "name": "Node.js Application Developer",
+        "issuedBy": "OpenJS Foundation",
+        "year": "2021"
+      },
+      {
+        "name": "MongoDB Certified Developer",
+        "issuedBy": "MongoDB Inc.",
+        "year": "2021"
+      },
+      {
+        "name": "Professional Scrum Master I",
+        "issuedBy": "Scrum.org",
+        "year": "2020"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "description": "Technologies and tools I work with regularly",
+    "groups": [
+      {
+        "label": "Frontend",
+        "items": ["React", "TypeScript", "Next.js", "Vue.js", "Tailwind CSS", "Redux", "Framer Motion", "React Query", "Zustand", "Vite"]
+      },
+      {
+        "label": "Backend",
+        "items": ["Node.js", "Express", "NestJS", "Python", "Django", "FastAPI", "GraphQL", "REST API", "WebSocket", "Microservices"]
+      },
+      {
+        "label": "Database",
+        "items": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "DynamoDB", "Prisma", "TypeORM", "Supabase"]
+      },
+      {
+        "label": "DevOps",
+        "items": ["Docker", "Kubernetes", "AWS", "Google Cloud", "CI/CD", "GitHub Actions", "Terraform", "Nginx", "Linux"]
+      },
+      {
+        "label": "Testing",
+        "items": ["Jest", "Vitest", "Playwright", "Cypress", "React Testing Library", "Unit Testing", "E2E Testing"]
+      },
+      {
+        "label": "Tools",
+        "items": ["Git", "VS Code", "Figma", "Postman", "Jira", "Slack", "Notion", "Linear"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "description": "Some of my recent work and side projects",
+    "entries": [
+      {
+        "name": "E-Commerce Platform",
+        "description": "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard. Built for scalability with microservices architecture.",
+        "tech": ["React", "Node.js", "PostgreSQL", "Redis", "Stripe"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "Real-Time Chat Application",
+        "description": "WebSocket-based chat application with rooms, private messaging, file sharing, and online presence indicators. Supports 10,000+ concurrent users.",
+        "tech": ["Next.js", "Socket.io", "MongoDB", "AWS"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "AI-Powered Content Generator",
+        "description": "SaaS platform that uses AI to generate marketing content, blog posts, and social media captions. Integrated with OpenAI API and includes payment processing.",
+        "tech": ["React", "Python", "FastAPI", "OpenAI", "PostgreSQL"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "Project Management Tool",
+        "description": "Collaborative project management application with kanban boards, Gantt charts, time tracking, and team collaboration features. Mobile-responsive design.",
+        "tech": ["Vue.js", "NestJS", "GraphQL", "MongoDB"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "Fitness Tracking App",
+        "description": "Mobile-first web application for tracking workouts, nutrition, and progress. Includes data visualization, goal setting, and social features.",
+        "tech": ["React Native", "Express", "PostgreSQL", "AWS"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "Portfolio Template Builder",
+        "description": "A no-code platform for creating beautiful portfolio websites. Users can choose templates, customize colors, and deploy with one click.",
+        "tech": ["Next.js", "Tailwind", "Supabase", "Vercel"],
+        "url": "https://github.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let's work together!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "privacy": "Your information is kept private and never shared.",
+    "toast": {
+      "success": "Message sent successfully! I'll get back to you soon."
+    }
+  },
+  "footer": {
+    "tagline": "Crafting digital experiences with passion and precision",
+    "builtWith": "Built with React, TypeScript, and Tailwind CSS",
+    "rights": "© {{year}} Your Name. All rights reserved.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "dribbble": "Dribbble"
+    }
+  },
   "darkMode": {
     "title": "Dark Mode",
     "description": "Toggle between light, dark, and system themes using next-themes with seamless transitions."

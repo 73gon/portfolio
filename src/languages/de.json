@@ -1,7 +1,218 @@
 {
   "title": "React + Vite Vorlage",
-  "subtitle": "Eine umfassende Starter-Vorlage mit modernen Tools",
+  "yw": "Eine umfassende Starter-Vorlage mit modernen Tools",
   "description": "Dies ist eine produktionsreife Vorlage, die mit modernen Webtechnologien erstellt wurde. Sie umfasst Routing, Theming, Internationalisierung und eine umfassende UI-Komponentenbibliothek. Perfekt für den Start Ihres nächsten Projekts!",
+  "meta": {
+    "name": "Ihr Name",
+    "role": "Full Stack Entwickler",
+    "location": "Berlin, Deutschland",
+    "description": "Entwicklung außergewöhnlicher digitaler Erlebnisse mit modernen Webtechnologien."
+  },
+  "nav": {
+    "home": "Startseite",
+    "education": "Bildung",
+    "experience": "Erfahrung",
+    "certifications": "Zertifizierungen",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "Hallo, ich bin Ihr Name. Ich erstelle großartige Webanwendungen.",
+    "intro": "Ein leidenschaftlicher Full-Stack-Entwickler, der sich auf die Erstellung schöner, leistungsstarker und benutzerfreundlicher digitaler Erlebnisse spezialisiert hat. Ich liebe es, komplexe Probleme in einfache, elegante Lösungen zu verwandeln.",
+    "availability": "Derzeit für Aufträge verfügbar"
+  },
+  "stats": {
+    "experience": "5+ Jahre",
+    "projects": "50+ Projekte",
+    "certified": "10+ Zertifiziert"
+  },
+  "actions": {
+    "hireMe": "Beauftragen Sie mich",
+    "downloadCv": "Lebenslauf herunterladen",
+    "viewProject": "Projekt ansehen",
+    "sendMessage": "Nachricht senden"
+  },
+  "education": {
+    "title": "Bildung",
+    "entries": [
+      {
+        "title": "Bachelor of Science in Informatik",
+        "institution": "Technische Universität",
+        "period": "2015 - 2019",
+        "summary": "Schwerpunkt auf Softwareentwicklung, Algorithmen und Datenstrukturen. Abschluss mit Auszeichnung und Abschlussarbeit über verteilte Systeme und Microservices-Architektur."
+      },
+      {
+        "title": "Master of Science in Software Engineering",
+        "institution": "Tech-Institut",
+        "period": "2019 - 2021",
+        "summary": "Fortgeschrittene Studien in Cloud Computing, maschinellem Lernen und modernen Web-Architekturen. Forschung konzentrierte sich auf skalierbares Anwendungsdesign und Leistungsoptimierung."
+      },
+      {
+        "title": "Full Stack Web Development Bootcamp",
+        "institution": "Code Akademie",
+        "period": "2018",
+        "summary": "Intensives 12-Wochen-Programm zu modernen JavaScript-Frameworks, Datenbanken und Deployment-Strategien. 10+ reale Anwendungen entwickelt."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "entries": [
+      {
+        "role": "Senior Full Stack Entwickler",
+        "company": "Tech Solutions GmbH",
+        "period": "2021 - Heute",
+        "description": "Leitung der Entwicklung von Unternehmenswebanwendungen mit React, Node.js und Cloud-Technologien. Mentoring von Junior-Entwicklern und Architektur skalierbarer Lösungen für Fortune-500-Kunden."
+      },
+      {
+        "role": "Full Stack Entwickler",
+        "company": "Digital Innovations AG",
+        "period": "2019 - 2021",
+        "description": "Entwicklung und Wartung mehrerer kundenorientierter Anwendungen. Implementierung von CI/CD-Pipelines und Reduzierung der Deployment-Zeit um 60%. Zusammenarbeit mit funktionsübergreifenden Teams zur Bereitstellung hochwertiger Produkte."
+      },
+      {
+        "role": "Frontend Entwickler",
+        "company": "Creative Web Studio",
+        "period": "2018 - 2019",
+        "description": "Entwicklung responsiver und barrierefreier Web-Oberflächen mit modernen Frameworks. Verbesserung der Ladezeiten um 40% durch Optimierungstechniken. Enge Zusammenarbeit mit Designern zur Umsetzung pixelgenauer UIs."
+      },
+      {
+        "role": "Junior Entwickler",
+        "company": "StartUp Ventures",
+        "period": "2017 - 2018",
+        "description": "Beitrag zur Entwicklung einer SaaS-Plattform. Erfahrung in agilen Methoden und Versionskontrolle gesammelt. Teilnahme an Code-Reviews und Wissensaustausch im Team."
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Zertifizierungen",
+    "entries": [
+      {
+        "name": "AWS Certified Solutions Architect",
+        "issuedBy": "Amazon Web Services",
+        "year": "2023"
+      },
+      {
+        "name": "Google Cloud Professional Developer",
+        "issuedBy": "Google Cloud",
+        "year": "2022"
+      },
+      {
+        "name": "React Advanced Certification",
+        "issuedBy": "Meta",
+        "year": "2022"
+      },
+      {
+        "name": "Node.js Application Developer",
+        "issuedBy": "OpenJS Foundation",
+        "year": "2021"
+      },
+      {
+        "name": "MongoDB Certified Developer",
+        "issuedBy": "MongoDB Inc.",
+        "year": "2021"
+      },
+      {
+        "name": "Professional Scrum Master I",
+        "issuedBy": "Scrum.org",
+        "year": "2020"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Fähigkeiten & Technologien",
+    "description": "Technologien und Tools, mit denen ich regelmäßig arbeite",
+    "groups": [
+      {
+        "label": "Frontend",
+        "items": ["React", "TypeScript", "Next.js", "Vue.js", "Tailwind CSS", "Redux", "Framer Motion", "React Query", "Zustand", "Vite"]
+      },
+      {
+        "label": "Backend",
+        "items": ["Node.js", "Express", "NestJS", "Python", "Django", "FastAPI", "GraphQL", "REST API", "WebSocket", "Microservices"]
+      },
+      {
+        "label": "Datenbank",
+        "items": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "DynamoDB", "Prisma", "TypeORM", "Supabase"]
+      },
+      {
+        "label": "DevOps",
+        "items": ["Docker", "Kubernetes", "AWS", "Google Cloud", "CI/CD", "GitHub Actions", "Terraform", "Nginx", "Linux"]
+      },
+      {
+        "label": "Testing",
+        "items": ["Jest", "Vitest", "Playwright", "Cypress", "React Testing Library", "Unit Testing", "E2E Testing"]
+      },
+      {
+        "label": "Werkzeuge",
+        "items": ["Git", "VS Code", "Figma", "Postman", "Jira", "Slack", "Notion", "Linear"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "description": "Einige meiner neuesten Arbeiten und Nebenprojekte",
+    "entries": [
+      {
+        "name": "E-Commerce-Plattform",
+        "description": "Eine voll ausgestattete E-Commerce-Plattform mit Zahlungsintegration, Bestandsverwaltung und Admin-Dashboard. Für Skalierbarkeit mit Microservices-Architektur gebaut.",
+        "tech": ["React", "Node.js", "PostgreSQL", "Redis", "Stripe"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "Echtzeit-Chat-Anwendung",
+        "description": "WebSocket-basierte Chat-Anwendung mit Räumen, privaten Nachrichten, Dateifreigabe und Online-Präsenzindikatoren. Unterstützt 10.000+ gleichzeitige Benutzer.",
+        "tech": ["Next.js", "Socket.io", "MongoDB", "AWS"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "KI-gestützter Content-Generator",
+        "description": "SaaS-Plattform, die KI zur Generierung von Marketinginhalten, Blog-Posts und Social-Media-Texten verwendet. Integriert mit OpenAI API und beinhaltet Zahlungsabwicklung.",
+        "tech": ["React", "Python", "FastAPI", "OpenAI", "PostgreSQL"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "Projektmanagement-Tool",
+        "description": "Kollaborative Projektmanagement-Anwendung mit Kanban-Boards, Gantt-Diagrammen, Zeiterfassung und Team-Kollaborationsfunktionen. Mobile-responsives Design.",
+        "tech": ["Vue.js", "NestJS", "GraphQL", "MongoDB"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "Fitness-Tracking-App",
+        "description": "Mobile-First-Webanwendung zum Verfolgen von Workouts, Ernährung und Fortschritt. Beinhaltet Datenvisualisierung, Zielsetzung und soziale Funktionen.",
+        "tech": ["React Native", "Express", "PostgreSQL", "AWS"],
+        "url": "https://github.com"
+      },
+      {
+        "name": "Portfolio-Template-Builder",
+        "description": "Eine No-Code-Plattform zur Erstellung schöner Portfolio-Websites. Benutzer können Vorlagen auswählen, Farben anpassen und mit einem Klick bereitstellen.",
+        "tech": ["Next.js", "Tailwind", "Supabase", "Vercel"],
+        "url": "https://github.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Haben Sie ein Projekt im Kopf? Lassen Sie uns zusammenarbeiten!",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "privacy": "Ihre Informationen werden vertraulich behandelt und niemals weitergegeben.",
+    "toast": {
+      "success": "Nachricht erfolgreich gesendet! Ich werde mich bald bei Ihnen melden."
+    }
+  },
+  "footer": {
+    "tagline": "Digitale Erlebnisse mit Leidenschaft und Präzision gestalten",
+    "builtWith": "Erstellt mit React, TypeScript und Tailwind CSS",
+    "rights": "© {{year}} Ihr Name. Alle Rechte vorbehalten.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "dribbble": "Dribbble"
+    }
+  },
   "darkMode": {
     "title": "Dunkelmodus",
     "description": "Wechseln Sie mit next-themes nahtlos zwischen hellen, dunklen und Systemthemen."
