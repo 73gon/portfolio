@@ -15,7 +15,7 @@ export function EducationSection() {
 
   return (
     <section id='education' className='container space-y-8 py-20 max-w-7xl'>
-      <SectionHeading title={t('education.title')} description={t('meta.description')} />
+      <SectionHeading title={t('education.title')} />
       <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5 }}>
         <Accordion type='single' collapsible className='divide-border/60 rounded-xl border border-border/60 bg-card'>
           {entries.map((entry, index) => (

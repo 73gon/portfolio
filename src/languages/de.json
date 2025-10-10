@@ -200,7 +200,8 @@
     "message": "Nachricht",
     "privacy": "Ihre Informationen werden vertraulich behandelt und niemals weitergegeben.",
     "toast": {
-      "success": "Nachricht erfolgreich gesendet! Ich werde mich bald bei Ihnen melden."
+      "success": "Nachricht erfolgreich gesendet! Ich werde mich bald bei Ihnen melden.",
+      "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
     }
   },
   "footer": {

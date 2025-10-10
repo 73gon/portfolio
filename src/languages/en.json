@@ -6,7 +6,7 @@
     "description": "Just a developer who loves to code"
   },
   "nav": {
-    "home": "Home",
+    "home": "About Me",
     "experience": "Experience",
     "education": "Education",
     "projects": "Projects",
@@ -20,9 +20,9 @@
     "availability": "Currently available for hire"
   },
   "stats": {
-    "experience": "3+ Years",
-    "projects": "3+ Projects",
-    "certified": "10+ Certified"
+    "experience": "Years",
+    "projects": "Projects",
+    "certified": "Certified"
   },
   "actions": {
     "hireMe": "Hire Me",
@@ -58,7 +58,7 @@
       },
       {
         "role": "Full Stack Developer",
-        "company": "",
+        "company": "Brainseed Factory",
         "period": "2025 - Today",
         "description": "Built responsive and accessible web interfaces using modern frameworks. Improved page load times by 40% through optimization techniques. Worked closely with designers to implement pixel-perfect UIs."
       },
@@ -111,7 +111,7 @@
     "groups": [
       {
         "label": "Frontend",
-        "items": ["React", "TypeScript", "Next.js", "Vue.js", "Tailwind CSS", "Redux", "Framer Motion", "React Query", "Zustand", "Vite"]
+        "items": ["React", "TypeScript", "Tailwind CSS", "Redux", "Framer Motion", "React Query", "Zustand", "Vite"]
       },
       {
         "label": "Backend",
@@ -185,7 +185,8 @@
     "message": "Message",
     "privacy": "Your information is kept private and never shared.",
     "toast": {
-      "success": "Message sent successfully! I'll get back to you soon."
+      "success": "Message sent successfully! I'll get back to you soon.",
+      "error": "Failed to send message. Please try again."
     }
   },
   "footer": {
@@ -195,7 +196,7 @@
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "dribbble": "Dribbble"
+      "x": "X"
     }
   },
   "darkMode": {

@@ -18,7 +18,7 @@ export function SkillsSection() {
   return (
     <section id='skills' className='container space-y-8 py-20 max-w-7xl'>
       <SectionHeading title={t('skills.title')} description={t('skills.description')} />
-      <Tabs defaultValue={groups[0]?.label ?? ''} className='w-full'>
+      <Tabs defaultValue={groups[0]?.label ?? ''} className='w-full items-center'>
         <TabsList className='flex-wrap justify-start gap-2 bg-muted/60'>
           {groups.map((group) => (
             <TabsTrigger key={group.label} value={group.label} className='capitalize'>

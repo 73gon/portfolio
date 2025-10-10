@@ -105,7 +105,7 @@ function LanguageSwitcher({ current }: { current: 'en' | 'de' }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='outline' size='icon' className='gap-2 w-17'>
+        <Button variant='outline' size='icon' className='gap-2 w-20'>
           <Globe className='size-4' aria-hidden />
           <span className='uppercase tracking-wide'>{current}</span>
         </Button>

@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Download, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -6,8 +7,16 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
+import Shuffle from '@/components/Shuffle';
+
 export function HeroSection() {
   const { t } = useTranslation();
+
+  const currentYear = new Date().getFullYear();
+  const totalProjects = 3;
+  const totalCertifications = 0;
+
+  const containerRef = useRef(null);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -18,7 +27,24 @@ export function HeroSection() {
     <section id='home' className='container flex flex-col gap-10 py-20 sm:py-32'>
       <motion.div initial='initial' animate='animate' transition={{ staggerChildren: 0.15 }} className='space-y-6'>
         <motion.div variants={fadeInUp} transition={{ duration: 0.5 }}>
-          <Badge className='w-fit bg-muted/80 text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground hover:bg-muted transition-colors'>{t('meta.role')}</Badge>
+          <Badge className='w-fit bg-muted/80 text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground hover:bg-muted transition-colors pt-2'>
+            <Shuffle
+              text={t('meta.role')}
+              className='text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground'
+              shuffleDirection='right'
+              duration={1.5}
+              animationMode='evenodd'
+              shuffleTimes={2}
+              ease='power3.out'
+              stagger={0.03}
+              threshold={0.1}
+              triggerOnce={true}
+              triggerOnHover={true}
+              respectReducedMotion={true}
+              loop={true}
+              loopDelay={2}
+            />
+          </Badge>
         </motion.div>
         <motion.h1
           variants={fadeInUp}
@@ -59,9 +85,9 @@ export function HeroSection() {
 
       <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.6, ease: 'easeOut' }} className='grid gap-6 sm:grid-cols-3'>
         {[
-          { label: t('stats.experience'), hint: t('nav.experience') },
-          { label: t('stats.projects'), hint: t('nav.projects') },
-          { label: t('stats.certified'), hint: t('nav.certifications') },
+          { label: currentYear - 2022 + '+ ' + t('stats.experience'), hint: t('nav.experience') },
+          { label: totalProjects + ' ' + t('stats.projects'), hint: t('nav.projects') },
+          { label: totalCertifications + ' ' + t('stats.certified'), hint: t('nav.certifications') },
         ].map((stat, index) => (
           <motion.div
             key={stat.label}
@@ -76,6 +102,9 @@ export function HeroSection() {
           </motion.div>
         ))}
       </motion.div>
+      <div ref={containerRef} style={{ position: 'relative' }}>
+        Test
+      </div>
     </section>
   );
 }
