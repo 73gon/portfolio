@@ -9,6 +9,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 import { Switch } from '@/components/ui/switch';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { Ryqo } from '@/components/ryqo';
 
 const NAV_ITEMS = ['home', 'education', 'experience', 'certifications', 'skills', 'projects', 'contact'] as const;
 
@@ -22,7 +23,9 @@ export function Navbar() {
     <header className='sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60'>
       <div className='container flex items-center justify-between py-4 max-w-7xl'>
         <a href='#home' className='flex items-center gap-2 text-sm font-semibold tracking-tight'>
-          <span className='flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-muted text-xs uppercase'>MM</span>
+          <span className='flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-muted overflow-hidden text-foreground'>
+            <Ryqo className='h-full w-full p-1.5' />
+          </span>
           <span>{t('meta.name')}</span>
         </a>
 
