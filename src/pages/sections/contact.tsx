@@ -10,16 +10,13 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 
-interface ContactFormState {
-  name: string;
-  email: string;
-  message: string;
-}
+import { type ContactFormState } from '@/schemas/contact';
 
 const INITIAL_STATE: ContactFormState = {
   name: '',
   email: '',
   message: '',
+  company: '',
 };
 
 export function ContactSection() {
@@ -31,22 +28,45 @@ export function ContactSection() {
     setForm((prev) => ({ ...prev, [field]: value }));
   }
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (isSubmitting) return;
     setIsSubmitting(true);
 
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          company: form.company, // honeypot
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setForm(INITIAL_STATE);
+        toast.success(t('contact.toast.success'));
+      } else {
+        toast.error(t('contact.toast.error') || 'Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Contact form error:', error);
+      toast.error(t('contact.toast.error') || 'Failed to send message. Please try again.');
+    } finally {
       setIsSubmitting(false);
-      setForm(INITIAL_STATE);
-      toast.success(t('contact.toast.success'));
-    }, 800);
+    }
   }
 
   return (
     <section id='contact' className='container space-y-8 py-20 pb-32 max-w-7xl'>
       <SectionHeading title={t('contact.title')} description={t('contact.subtitle')} />
-      <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.45 }} className='max-w-2xl'>
+      <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.45 }}>
         <Card className='shadow-md'>
           <CardContent className='space-y-6 p-8'>
             <form className='space-y-6' onSubmit={handleSubmit}>
@@ -62,6 +82,17 @@ export function ContactSection() {
                 <Label htmlFor='message'>{t('contact.message')}</Label>
                 <Textarea id='message' value={form.message} onChange={(event) => handleChange('message', event.target.value)} placeholder={t('contact.message')} rows={5} required />
               </div>
+              {/* Honeypot field - hidden from users, catches bots */}
+              <input
+                type='text'
+                name='company'
+                value={form.company}
+                onChange={(event) => handleChange('company', event.target.value)}
+                style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px' }}
+                tabIndex={-1}
+                autoComplete='off'
+                aria-hidden='true'
+              />
               <p className='text-xs text-muted-foreground'>{t('contact.privacy')}</p>
               <Button type='submit' size='lg' className='w-full' disabled={isSubmitting || !form.message.trim()}>
                 {isSubmitting ? 'Sending...' : t('actions.sendMessage')}
