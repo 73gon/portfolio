@@ -7,7 +7,7 @@ import { SkillsSection } from './sections/skills';
 import { ProjectsSection } from './sections/projects';
 import { ContactSection } from './sections/contact';
 
-export function Portfolio() {
+export function PortfolioPage() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className='min-h-screen bg-background relative overflow-hidden max-w-7xl mx-auto'>
       {/* Subtle gradient background decoration */}
