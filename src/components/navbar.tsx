@@ -1,17 +1,16 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from 'next-themes';
-import { Globe, Menu } from 'lucide-react';
+import { Globe, Menu, Moon, Sun } from 'lucide-react';
 
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu';
-import { Switch } from '@/components/ui/switch';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Ryqo } from '@/components/ryqo';
 
-const NAV_ITEMS = ['home', 'education', 'experience', 'certifications', 'skills', 'projects', 'contact'] as const;
+const NAV_ITEMS = ['home', 'experience', 'education', 'projects', 'skills', 'certifications', 'contact'] as const;
 
 export function Navbar() {
   const { t, i18n } = useTranslation();
@@ -20,7 +19,7 @@ export function Navbar() {
   const items = NAV_ITEMS.map((id) => ({ id, label: t(`nav.${id}`) }));
 
   return (
-    <header className='sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60'>
+    <header className='flex justify-center sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60'>
       <div className='container flex items-center justify-between py-4 max-w-7xl'>
         <a href='#home' className='flex items-center gap-2 text-sm font-semibold tracking-tight'>
           <span className='flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-muted overflow-hidden text-foreground'>
@@ -48,7 +47,10 @@ export function Navbar() {
           <TooltipProvider>
             <Tooltip delayDuration={0}>
               <TooltipTrigger asChild>
-                <Switch aria-label='Toggle dark mode' checked={theme === 'dark'} onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')} />
+                <Button variant='outline' size='icon' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} aria-label='Toggle dark mode' className='relative overflow-hidden'>
+                  <Sun className='h-5 w-5 rotate-0 scale-100 transition-all duration-500 dark:-rotate-90 dark:scale-0' />
+                  <Moon className='absolute h-5 w-5 rotate-90 scale-0 transition-all duration-500 dark:rotate-0 dark:scale-100' />
+                </Button>
               </TooltipTrigger>
               <TooltipContent sideOffset={8}>{theme === 'dark' ? 'Light mode' : 'Dark mode'}</TooltipContent>
             </Tooltip>
@@ -69,7 +71,10 @@ export function Navbar() {
               <div className='mt-6 flex flex-col gap-6'>
                 <div className='flex items-center justify-between'>
                   <span className='text-sm font-medium text-muted-foreground'>Dark mode</span>
-                  <Switch aria-label='Toggle dark mode' checked={theme === 'dark'} onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')} />
+                  <Button variant='outline' size='icon' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} aria-label='Toggle dark mode' className='relative overflow-hidden'>
+                    <Sun className='size-5 rotate-0 scale-100 transition-all duration-500 dark:-rotate-90 dark:scale-0' />
+                    <Moon className='absolute size-5 rotate-90 scale-0 transition-all duration-500 dark:rotate-0 dark:scale-100' />
+                  </Button>
                 </div>
                 <LanguageSwitcher current={i18n.language as 'en' | 'de'} />
                 <ul className='flex flex-col gap-4 text-sm'>
@@ -100,8 +105,8 @@ function LanguageSwitcher({ current }: { current: 'en' | 'de' }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='outline' size='sm' className='gap-2'>
-          <Globe className='h-4 w-4' aria-hidden />
+        <Button variant='outline' size='icon' className='gap-2 w-17'>
+          <Globe className='size-4' aria-hidden />
           <span className='uppercase tracking-wide'>{current}</span>
         </Button>
       </DropdownMenuTrigger>

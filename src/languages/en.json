@@ -1,30 +1,27 @@
 {
-  "title": "React + Vite Template",
-  "subtitle": "A comprehensive starter template with modern tooling",
-  "description": "This is a production-ready template built with modern web technologies. It includes routing, theming, internationalization, and a comprehensive UI component library. Perfect for kickstarting your next project!",
   "meta": {
-    "name": "Your Name",
-    "role": "Full Stack Developer",
-    "location": "San Francisco, CA",
-    "description": "Building exceptional digital experiences with modern web technologies."
+    "name": "Malik",
+    "role": "Full Stack Developer - AI Engineer",
+    "location": "Cologne, Germany",
+    "description": "Just a developer who loves to code"
   },
   "nav": {
     "home": "Home",
-    "education": "Education",
     "experience": "Experience",
-    "certifications": "Certifications",
-    "skills": "Skills",
+    "education": "Education",
     "projects": "Projects",
+    "skills": "Skills",
+    "certifications": "Certifications",
     "contact": "Contact"
   },
   "hero": {
-    "headline": "Hi, I'm Your Name. I build amazing web applications.",
-    "intro": "A passionate full-stack developer specializing in creating beautiful, performant, and user-friendly digital experiences. I love turning complex problems into simple, elegant solutions.",
+    "headline": "Hi, I'm Malik. I love to code random stuff",
+    "intro": "Hey, I'm a 22-year-old full-stack dev and AI engineer who's all about building cool, fast, and awesome digital stuff. I geek out on solving tricky problems with AI magic and turning ideas into epic solutions!",
     "availability": "Currently available for hire"
   },
   "stats": {
-    "experience": "5+ Years",
-    "projects": "50+ Projects",
+    "experience": "3+ Years",
+    "projects": "3+ Projects",
     "certified": "10+ Certified"
   },
   "actions": {
@@ -37,22 +34,16 @@
     "title": "Education",
     "entries": [
       {
-        "title": "Bachelor of Science in Computer Science",
-        "institution": "University of Technology",
-        "period": "2015 - 2019",
+        "title": "Master of Science in Computer Science",
+        "institution": "Heinrich Heine University Düsseldorf",
+        "period": "2025 - 2027",
         "summary": "Focused on software engineering, algorithms, and data structures. Graduated with honors and completed a thesis on distributed systems and microservices architecture."
       },
       {
-        "title": "Master of Science in Software Engineering",
-        "institution": "Tech Institute",
-        "period": "2019 - 2021",
+        "title": "Bachelor of Science in Information Systems",
+        "institution": "University of Cologne",
+        "period": "2021 - 2024",
         "summary": "Advanced studies in cloud computing, machine learning, and modern web architectures. Research focused on scalable application design and performance optimization."
-      },
-      {
-        "title": "Full Stack Web Development Bootcamp",
-        "institution": "Code Academy",
-        "period": "2018",
-        "summary": "Intensive 12-week program covering modern JavaScript frameworks, databases, and deployment strategies. Built 10+ real-world applications."
       }
     ]
   },
@@ -60,27 +51,21 @@
     "title": "Work Experience",
     "entries": [
       {
-        "role": "Senior Full Stack Developer",
-        "company": "Tech Solutions Inc.",
-        "period": "2021 - Present",
-        "description": "Leading development of enterprise web applications using React, Node.js, and cloud technologies. Mentoring junior developers and architecting scalable solutions for Fortune 500 clients."
-      },
-      {
-        "role": "Full Stack Developer",
-        "company": "Digital Innovations Co.",
-        "period": "2019 - 2021",
+        "role": "CO-Founder & Full Stack Developer",
+        "company": "Blackboard",
+        "period": "2025 - Today",
         "description": "Developed and maintained multiple client-facing applications. Implemented CI/CD pipelines and reduced deployment time by 60%. Collaborated with cross-functional teams to deliver high-quality products."
       },
       {
-        "role": "Frontend Developer",
-        "company": "Creative Web Studio",
-        "period": "2018 - 2019",
+        "role": "Full Stack Developer",
+        "company": "",
+        "period": "2025 - Today",
         "description": "Built responsive and accessible web interfaces using modern frameworks. Improved page load times by 40% through optimization techniques. Worked closely with designers to implement pixel-perfect UIs."
       },
       {
-        "role": "Junior Developer",
-        "company": "StartUp Ventures",
-        "period": "2017 - 2018",
+        "role": "Engineer (previously Application Manager)",
+        "company": "Simplify Services",
+        "period": "2022 - Today",
         "description": "Contributed to the development of a SaaS platform. Gained experience in agile methodologies and version control. Participated in code reviews and team knowledge sharing sessions."
       }
     ]
@@ -206,7 +191,7 @@
   "footer": {
     "tagline": "Crafting digital experiences with passion and precision",
     "builtWith": "Built with React, TypeScript, and Tailwind CSS",
-    "rights": "© {{year}} Your Name. All rights reserved.",
+    "rights": "© {{year}} Malik. All rights reserved.",
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",

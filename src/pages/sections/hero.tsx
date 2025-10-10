@@ -1,17 +1,13 @@
+import { motion } from 'framer-motion';
 import { ArrowUpRight, Download, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { useRef } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import Shuffle from '@/components/Shuffle';
-import VariableProximity from '@/components/VariableProximity';
 
 export function HeroSection() {
   const { t } = useTranslation();
-  const containerRef = useRef<HTMLDivElement | null>(null);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -19,39 +15,25 @@ export function HeroSection() {
   };
 
   return (
-    <section id='home' className='container flex flex-col items-center gap-10 py-20 sm:py-32 max-w-7xl'>
-      <motion.div ref={containerRef} initial='initial' animate='animate' transition={{ staggerChildren: 0.15 }} className='space-y-6 text-center'>
-        <motion.div variants={fadeInUp} transition={{ duration: 0.5 }} className='flex justify-center'>
+    <section id='home' className='container flex flex-col gap-10 py-20 sm:py-32'>
+      <motion.div initial='initial' animate='animate' transition={{ staggerChildren: 0.15 }} className='space-y-6'>
+        <motion.div variants={fadeInUp} transition={{ duration: 0.5 }}>
           <Badge className='w-fit bg-muted/80 text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground hover:bg-muted transition-colors'>{t('meta.role')}</Badge>
         </motion.div>
         <motion.h1
           variants={fadeInUp}
           transition={{ duration: 0.5 }}
-          className='text-4xl font-bold tracking-tight text-balance sm:text-6xl'
+          className='text-4xl font-bold tracking-tight text-balance sm:text-6xl bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text'
         >
-          <Shuffle
-            text={t('hero.headline')}
-            tag='span'
-            className='bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text'
-            duration={0.5}
-            shuffleTimes={2}
-            triggerOnHover={false}
-          />
+          {t('hero.headline')}
         </motion.h1>
-        <motion.p variants={fadeInUp} transition={{ duration: 0.5 }} className='text-base text-muted-foreground sm:text-xl leading-relaxed mx-auto'>
+        <motion.p variants={fadeInUp} transition={{ duration: 0.5 }} className='max-w-2xl text-base text-muted-foreground sm:text-xl leading-relaxed'>
           {t('hero.intro')}
         </motion.p>
         <motion.p variants={fadeInUp} transition={{ duration: 0.5 }} className='text-sm text-muted-foreground'>
-          <VariableProximity
-            label={t('meta.description')}
-            fromFontVariationSettings="'wght' 400, 'wdth' 100"
-            toFontVariationSettings="'wght' 900, 'wdth' 150"
-            containerRef={containerRef}
-            radius={120}
-            falloff='gaussian'
-          />
+          {t('meta.description')}
         </motion.p>
-        <motion.div variants={fadeInUp} transition={{ duration: 0.5 }} className='flex flex-wrap items-center justify-center gap-4 pt-2'>
+        <motion.div variants={fadeInUp} transition={{ duration: 0.5 }} className='flex flex-wrap items-center gap-4 pt-2 justify-center'>
           <Button size='lg' className='group shadow-lg hover:shadow-xl transition-all' asChild>
             <a href='#contact'>
               <Mail className='mr-2 h-4 w-4' aria-hidden />
