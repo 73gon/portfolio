@@ -24,19 +24,8 @@ export function HeroSection() {
         <motion.div variants={fadeInUp} transition={{ duration: 0.5 }} className='flex justify-center'>
           <Badge className='w-fit bg-muted/80 text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground hover:bg-muted transition-colors'>{t('meta.role')}</Badge>
         </motion.div>
-        <motion.h1
-          variants={fadeInUp}
-          transition={{ duration: 0.5 }}
-          className='text-4xl font-bold tracking-tight text-balance sm:text-6xl'
-        >
-          <Shuffle
-            text={t('hero.headline')}
-            tag='span'
-            className='bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text'
-            duration={0.5}
-            shuffleTimes={2}
-            triggerOnHover={false}
-          />
+        <motion.h1 variants={fadeInUp} transition={{ duration: 0.5 }} className='text-4xl font-bold tracking-tight text-balance sm:text-6xl'>
+          <Shuffle text={t('hero.headline')} tag='span' className='bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text' duration={0.5} shuffleTimes={2} triggerOnHover={false} />
         </motion.h1>
         <motion.p variants={fadeInUp} transition={{ duration: 0.5 }} className='text-base text-muted-foreground sm:text-xl leading-relaxed mx-auto'>
           {t('hero.intro')}

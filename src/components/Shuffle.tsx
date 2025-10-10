@@ -55,7 +55,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
   colorTo,
   triggerOnce = true,
   respectReducedMotion = true,
-  triggerOnHover = true
+  triggerOnHover = true,
 }) => {
   const ref = useRef<HTMLElement>(null);
   const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -104,7 +104,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
           tlRef.current = null;
         }
         if (wrappersRef.current.length) {
-          wrappersRef.current.forEach(wrap => {
+          wrappersRef.current.forEach((wrap) => {
             const inner = wrap.firstElementChild as HTMLElement | null;
             const orig = inner?.querySelector('[data-orig="1"]') as HTMLElement | null;
             if (orig && wrap.parentNode) wrap.parentNode.replaceChild(orig, wrap);
@@ -127,7 +127,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
           wordsClass: 'shuffle-word',
           linesClass: 'shuffle-line',
           smartWrap: true,
-          reduceWhiteSpace: false
+          reduceWhiteSpace: false,
         });
 
         const chars = (splitRef.current.chars || []) as HTMLElement[];
@@ -136,7 +136,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
         const rolls = Math.max(1, Math.floor(shuffleTimes));
         const rand = (set: string) => set.charAt(Math.floor(Math.random() * set.length)) || '';
 
-        chars.forEach(ch => {
+        chars.forEach((ch) => {
           const parent = ch.parentElement;
           if (!parent) return;
 
@@ -193,11 +193,11 @@ const Shuffle: React.FC<ShuffleProps> = ({
         });
       };
 
-      const inners = () => wrappersRef.current.map(w => w.firstElementChild as HTMLElement);
+      const inners = () => wrappersRef.current.map((w) => w.firstElementChild as HTMLElement);
 
       const randomizeScrambles = () => {
         if (!scrambleCharset) return;
-        wrappersRef.current.forEach(w => {
+        wrappersRef.current.forEach((w) => {
           const strip = w.firstElementChild as HTMLElement;
           if (!strip) return;
           const kids = Array.from(strip.children) as HTMLElement[];
@@ -208,7 +208,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
       };
 
       const cleanupToStill = () => {
-        wrappersRef.current.forEach(w => {
+        wrappersRef.current.forEach((w) => {
           const strip = w.firstElementChild as HTMLElement;
           if (!strip) return;
           const real = strip.querySelector('[data-orig="1"]') as HTMLElement | null;
@@ -242,7 +242,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
               onShuffleComplete?.();
               armHover();
             }
-          }
+          },
         });
 
         const addTween = (targets: HTMLElement[], at: number) => {
@@ -253,9 +253,9 @@ const Shuffle: React.FC<ShuffleProps> = ({
               duration,
               ease,
               force3D: true,
-              stagger: animationMode === 'evenodd' ? stagger : 0
+              stagger: animationMode === 'evenodd' ? stagger : 0,
             },
-            at
+            at,
           );
           if (colorFrom && colorTo) tl.to(targets, { color: colorTo, duration, ease }, at);
         };
@@ -268,7 +268,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
           if (odd.length) addTween(odd, 0);
           if (even.length) addTween(even, evenStart);
         } else {
-          strips.forEach(strip => {
+          strips.forEach((strip) => {
             const d = Math.random() * maxDelay;
             tl.to(
               strip,
@@ -276,9 +276,9 @@ const Shuffle: React.FC<ShuffleProps> = ({
                 x: parseFloat(strip.getAttribute('data-final-x') || '0'),
                 duration,
                 ease,
-                force3D: true
+                force3D: true,
               },
-              d
+              d,
             );
             if (colorFrom && colorTo) tl.fromTo(strip, { color: colorFrom }, { color: colorTo, duration, ease }, d);
           });
@@ -312,7 +312,7 @@ const Shuffle: React.FC<ShuffleProps> = ({
         trigger: el,
         start,
         once: triggerOnce,
-        onEnter: create
+        onEnter: create,
       });
 
       return () => {
@@ -342,17 +342,17 @@ const Shuffle: React.FC<ShuffleProps> = ({
         colorTo,
         triggerOnce,
         respectReducedMotion,
-        triggerOnHover
+        triggerOnHover,
       ],
-      scope: ref
-    }
+      scope: ref,
+    },
   );
 
   const baseTw = 'inline-block whitespace-normal break-words will-change-transform uppercase text-[4rem] leading-none';
   const commonStyle: React.CSSProperties = {
     textAlign,
     fontFamily: `'Press Start 2P', sans-serif`,
-    ...style
+    ...style,
   };
 
   const classes = `${baseTw} ${ready ? 'visible' : 'invisible'} ${className}`.trim();
