@@ -1,7 +1,7 @@
 import { type FormEvent, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { toast } from '@/components/ui/Toast';
+import { toast } from '@/components/toast';
 
 import { SectionHeading } from '@/components/section-heading';
 import { Button } from '@/components/ui/button';
