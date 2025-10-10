@@ -82,7 +82,7 @@ export function ContactSection() {
                 <Label htmlFor='message'>{t('contact.message')}</Label>
                 <Textarea id='message' value={form.message} onChange={(event) => handleChange('message', event.target.value)} placeholder={t('contact.message')} rows={5} required />
               </div>
-              {/* Honeypot field - hidden from users, catches bots */}
+              {/* Honeypot field - hidden for users, catches bots */}
               <input
                 type='text'
                 name='company'
