@@ -18,7 +18,7 @@ export function ProjectsSection() {
   const projects = t('projects.entries', { returnObjects: true }) as Project[];
 
   return (
-    <section id='projects' className='container space-y-8 py-20 max-w-7xl'>
+    <section id='projects' className='container space-y-8 py-20 max-w-7xl px-5'>
       <SectionHeading title={t('projects.title')} description={t('projects.description')} />
       <div className='grid gap-6 md:grid-cols-2'>
         {projects.map((project, index) => (

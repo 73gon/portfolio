@@ -1,34 +1,31 @@
 {
-  "title": "React + Vite Vorlage",
-  "yw": "Eine umfassende Starter-Vorlage mit modernen Tools",
-  "description": "Dies ist eine produktionsreife Vorlage, die mit modernen Webtechnologien erstellt wurde. Sie umfasst Routing, Theming, Internationalisierung und eine umfassende UI-Komponentenbibliothek. Perfekt für den Start Ihres nächsten Projekts!",
   "meta": {
-    "name": "Ihr Name",
-    "role": "Full Stack Entwickler",
-    "location": "Berlin, Deutschland",
-    "description": "Entwicklung außergewöhnlicher digitaler Erlebnisse mit modernen Webtechnologien."
+    "name": "Malik",
+    "role": "Full Stack Developer - KI-Ingenieur",
+    "location": "Köln, Deutschland",
+    "description": "Web, Robotik & KI"
   },
   "nav": {
-    "home": "Startseite",
-    "education": "Bildung",
+    "home": "Über mich",
     "experience": "Erfahrung",
-    "certifications": "Zertifizierungen",
-    "skills": "Fähigkeiten",
+    "education": "Bildung",
     "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "certifications": "Zertifizierungen",
     "contact": "Kontakt"
   },
   "hero": {
-    "headline": "Hallo, ich bin Ihr Name. Ich erstelle großartige Webanwendungen.",
-    "intro": "Ein leidenschaftlicher Full-Stack-Entwickler, der sich auf die Erstellung schöner, leistungsstarker und benutzerfreundlicher digitaler Erlebnisse spezialisiert hat. Ich liebe es, komplexe Probleme in einfache, elegante Lösungen zu verwandeln.",
-    "availability": "Derzeit für Aufträge verfügbar"
+    "headline": "Hi, ich bin Malik — ich entwickle intelligente und ästhetische Weblösungen.",
+    "intro": "Hey, ich bin ein 22-jähriger Full-Stack-Entwickler und KI-Ingenieur, der leidenschaftlich gerne moderne, schnelle und kreative digitale Lösungen baut. Ich liebe es, komplexe Probleme mit KI zu lösen und Ideen in funktionierende Projekte zu verwandeln!",
+    "availability": "Aktuell verfügbar für neue Projekte"
   },
   "stats": {
-    "experience": "5+ Jahre",
-    "projects": "50+ Projekte",
-    "certified": "10+ Zertifiziert"
+    "experience": "Jahre",
+    "projects": "Projekte",
+    "certified": "Zertifiziert"
   },
   "actions": {
-    "hireMe": "Beauftragen Sie mich",
+    "hireMe": "Beauftrage mich",
     "downloadCv": "Lebenslauf herunterladen",
     "viewProject": "Projekt ansehen",
     "sendMessage": "Nachricht senden"
@@ -37,22 +34,16 @@
     "title": "Bildung",
     "entries": [
       {
-        "title": "Bachelor of Science in Informatik",
-        "institution": "Technische Universität",
-        "period": "2015 - 2019",
-        "summary": "Schwerpunkt auf Softwareentwicklung, Algorithmen und Datenstrukturen. Abschluss mit Auszeichnung und Abschlussarbeit über verteilte Systeme und Microservices-Architektur."
+        "title": "Master of Science in Informatik",
+        "institution": "Heinrich-Heine-Universität Düsseldorf",
+        "period": "2025 - Heute",
+        "summary": "Spezialisierung auf Künstliche Intelligenz und Deep Learning. Fokus auf fortgeschrittene neuronale Netzwerkarchitekturen, Modelloptimierung und reale KI-Bereitstellung."
       },
       {
-        "title": "Master of Science in Software Engineering",
-        "institution": "Tech-Institut",
-        "period": "2019 - 2021",
-        "summary": "Fortgeschrittene Studien in Cloud Computing, maschinellem Lernen und modernen Web-Architekturen. Forschung konzentrierte sich auf skalierbares Anwendungsdesign und Leistungsoptimierung."
-      },
-      {
-        "title": "Full Stack Web Development Bootcamp",
-        "institution": "Code Akademie",
-        "period": "2018",
-        "summary": "Intensives 12-Wochen-Programm zu modernen JavaScript-Frameworks, Datenbanken und Deployment-Strategien. 10+ reale Anwendungen entwickelt."
+        "title": "Bachelor of Science in Wirtschaftsinformatik",
+        "institution": "Universität zu Köln",
+        "period": "2021 - 2024",
+        "summary": "Abschluss eines breiten Lehrplans mit Softwareentwicklung, Datenbanken und Webtechnologien. Aufbau einer soliden Grundlage in Informatik und datengetriebenen Systemen."
       }
     ]
   },
@@ -60,28 +51,22 @@
     "title": "Berufserfahrung",
     "entries": [
       {
-        "role": "Senior Full Stack Entwickler",
-        "company": "Tech Solutions GmbH",
-        "period": "2021 - Heute",
-        "description": "Leitung der Entwicklung von Unternehmenswebanwendungen mit React, Node.js und Cloud-Technologien. Mentoring von Junior-Entwicklern und Architektur skalierbarer Lösungen für Fortune-500-Kunden."
+        "role": "Mitgründer & Full Stack Developer",
+        "company": "Blackboard",
+        "period": "Oktober 2025 - Heute",
+        "description": "Entwicklung einer Full-Stack-Webanwendung für Lehrer mit React, TypeScript und Tailwind. Leitung der Produktarchitektur, Deployment-Einrichtung und UI/UX-Richtung."
       },
       {
-        "role": "Full Stack Entwickler",
-        "company": "Digital Innovations AG",
-        "period": "2019 - 2021",
-        "description": "Entwicklung und Wartung mehrerer kundenorientierter Anwendungen. Implementierung von CI/CD-Pipelines und Reduzierung der Deployment-Zeit um 60%. Zusammenarbeit mit funktionsübergreifenden Teams zur Bereitstellung hochwertiger Produkte."
+        "role": "Full Stack Engineer",
+        "company": "Brainseed Factory",
+        "period": "Januar 2025 - Heute",
+        "description": "Entwicklung des Frontends von monamy.ai mit React, TypeScript und Tailwind. Integration von Backend-APIs, Leistungsoptimierung und Sicherstellung der Design-Konsistenz."
       },
       {
-        "role": "Frontend Entwickler",
-        "company": "Creative Web Studio",
-        "period": "2018 - 2019",
-        "description": "Entwicklung responsiver und barrierefreier Web-Oberflächen mit modernen Frameworks. Verbesserung der Ladezeiten um 40% durch Optimierungstechniken. Enge Zusammenarbeit mit Designern zur Umsetzung pixelgenauer UIs."
-      },
-      {
-        "role": "Junior Entwickler",
-        "company": "StartUp Ventures",
-        "period": "2017 - 2018",
-        "description": "Beitrag zur Entwicklung einer SaaS-Plattform. Erfahrung in agilen Methoden und Versionskontrolle gesammelt. Teilnahme an Code-Reviews und Wissensaustausch im Team."
+        "role": "Engineer (ehemals Application Manager)",
+        "company": "Simplify-Services",
+        "period": "August 2022 - Heute",
+        "description": "Wartung und Erweiterung von Backend-Systemen, Web-Widgets und APIs. Verwaltung von Deployments, Verbesserung der Skalierbarkeit und Zusammenarbeit bei der Prozessoptimierung."
       }
     ]
   },
@@ -107,16 +92,6 @@
         "name": "Node.js Application Developer",
         "issuedBy": "OpenJS Foundation",
         "year": "2021"
-      },
-      {
-        "name": "MongoDB Certified Developer",
-        "issuedBy": "MongoDB Inc.",
-        "year": "2021"
-      },
-      {
-        "name": "Professional Scrum Master I",
-        "issuedBy": "Scrum.org",
-        "year": "2020"
       }
     ]
   },
@@ -126,27 +101,27 @@
     "groups": [
       {
         "label": "Frontend",
-        "items": ["React", "TypeScript", "Next.js", "Vue.js", "Tailwind CSS", "Redux", "Framer Motion", "React Query", "Zustand", "Vite"]
+        "items": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "React Query", "Zustand", "Vite"]
       },
       {
         "label": "Backend",
-        "items": ["Node.js", "Express", "NestJS", "Python", "Django", "FastAPI", "GraphQL", "REST API", "WebSocket", "Microservices"]
+        "items": ["Node.js", "Express", "Python", "Django", "FastAPI", "REST API"]
       },
       {
         "label": "Datenbank",
-        "items": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "DynamoDB", "Prisma", "TypeORM", "Supabase"]
+        "items": ["PostgreSQL", "MongoDB", "MySQL"]
       },
       {
         "label": "DevOps",
-        "items": ["Docker", "Kubernetes", "AWS", "Google Cloud", "CI/CD", "GitHub Actions", "Terraform", "Nginx", "Linux"]
+        "items": ["Docker", "AWS", "CI/CD", "GitHub Actions", "Linux"]
       },
       {
         "label": "Testing",
-        "items": ["Jest", "Vitest", "Playwright", "Cypress", "React Testing Library", "Unit Testing", "E2E Testing"]
+        "items": []
       },
       {
         "label": "Werkzeuge",
-        "items": ["Git", "VS Code", "Figma", "Postman", "Jira", "Slack", "Notion", "Linear"]
+        "items": ["Git", "Figma", "Postman", "Slack", "VS Code"]
       }
     ]
   },
@@ -155,40 +130,34 @@
     "description": "Einige meiner neuesten Arbeiten und Nebenprojekte",
     "entries": [
       {
-        "name": "E-Commerce-Plattform",
-        "description": "Eine voll ausgestattete E-Commerce-Plattform mit Zahlungsintegration, Bestandsverwaltung und Admin-Dashboard. Für Skalierbarkeit mit Microservices-Architektur gebaut.",
-        "tech": ["React", "Node.js", "PostgreSQL", "Redis", "Stripe"],
-        "url": "https://github.com"
+        "name": "React Template Starter",
+        "description": "Eine vorkonfigurierte React + Vite + Tailwind-Vorlage mit ShadCN UI, Lucide-Icons, Framer Motion und Dark-Mode-Unterstützung. Entwickelt, um neue Projekt-Setups mit sauberer Architektur und wiederverwendbaren Komponenten zu beschleunigen.",
+        "tech": ["React", "Vite", "TailwindCSS", "ShadCN", "Lucide", "TypeScript"],
+        "url": "https://github.com/73gon/template-react"
       },
       {
-        "name": "Echtzeit-Chat-Anwendung",
-        "description": "WebSocket-basierte Chat-Anwendung mit Räumen, privaten Nachrichten, Dateifreigabe und Online-Präsenzindikatoren. Unterstützt 10.000+ gleichzeitige Benutzer.",
-        "tech": ["Next.js", "Socket.io", "MongoDB", "AWS"],
-        "url": "https://github.com"
+        "name": "Islamische Geschichten-Plattform",
+        "description": "Eine moderne Web-Plattform zum Erkunden und Lesen von Geschichten der Propheten mit elegantem UI und barrierefreiem Design. Fokus auf Lesbarkeit und strukturierte Erzählpräsentation.",
+        "tech": ["Next.js", "TailwindCSS", "TypeScript"],
+        "url": "https://github.com/73gon"
       },
       {
-        "name": "KI-gestützter Content-Generator",
-        "description": "SaaS-Plattform, die KI zur Generierung von Marketinginhalten, Blog-Posts und Social-Media-Texten verwendet. Integriert mit OpenAI API und beinhaltet Zahlungsabwicklung.",
-        "tech": ["React", "Python", "FastAPI", "OpenAI", "PostgreSQL"],
-        "url": "https://github.com"
+        "name": "Blackboard",
+        "description": "Eine Full-Stack-Webanwendung für Lehrer zum Erstellen, Verwalten und Teilen von Arbeitsblättern mit KI-Unterstützung. Beinhaltet Dateiverwaltung, Arbeitsblatt-Generierung und kollaborative Tools.",
+        "tech": ["React", "TypeScript", "TailwindCSS", "Node.js", "OpenAI API"],
+        "url": "https://github.com/73gon"
       },
       {
-        "name": "Projektmanagement-Tool",
-        "description": "Kollaborative Projektmanagement-Anwendung mit Kanban-Boards, Gantt-Diagrammen, Zeiterfassung und Team-Kollaborationsfunktionen. Mobile-responsives Design.",
-        "tech": ["Vue.js", "NestJS", "GraphQL", "MongoDB"],
-        "url": "https://github.com"
+        "name": "Monamy.ai",
+        "description": "Eine KI-gesteuerte Call-Center-Plattform zur Verwaltung von Kundeninteraktionen, Kontaktdaten und automatisierten Antworten. Entwickelt mit Fokus auf Skalierbarkeit, Performance und Echtzeit-Kommunikation.",
+        "tech": ["React", "TypeScript", "TailwindCSS", "Node.js", "AI APIs"],
+        "url": "https://monamy.ai"
       },
       {
-        "name": "Fitness-Tracking-App",
-        "description": "Mobile-First-Webanwendung zum Verfolgen von Workouts, Ernährung und Fortschritt. Beinhaltet Datenvisualisierung, Zielsetzung und soziale Funktionen.",
-        "tech": ["React Native", "Express", "PostgreSQL", "AWS"],
-        "url": "https://github.com"
-      },
-      {
-        "name": "Portfolio-Template-Builder",
-        "description": "Eine No-Code-Plattform zur Erstellung schöner Portfolio-Websites. Benutzer können Vorlagen auswählen, Farben anpassen und mit einem Klick bereitstellen.",
-        "tech": ["Next.js", "Tailwind", "Supabase", "Vercel"],
-        "url": "https://github.com"
+        "name": "Hotel-Websites",
+        "description": "Entwicklung und Bereitstellung von zwei professionellen Hotel-Websites — HotelRHD.de und BestCologne.de — mit responsiven Layouts, Buchungsintegrationen und optimierter SEO-Performance.",
+        "tech": ["WordPress", "PHP", "TailwindCSS", "Vite"],
+        "url": "https://hotelrhd.de"
       }
     ]
   },
@@ -207,79 +176,11 @@
   "footer": {
     "tagline": "Digitale Erlebnisse mit Leidenschaft und Präzision gestalten",
     "builtWith": "Erstellt mit React, TypeScript und Tailwind CSS",
-    "rights": "© {{year}} Ihr Name. Alle Rechte vorbehalten.",
+    "rights": "© {{year}} Ryqo. Alle Rechte vorbehalten.",
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "dribbble": "Dribbble"
+      "x": "X"
     }
-  },
-  "darkMode": {
-    "title": "Dunkelmodus",
-    "description": "Wechseln Sie mit next-themes nahtlos zwischen hellen, dunklen und Systemthemen."
-  },
-  "translation": {
-    "title": "Internationalisierung",
-    "description": "Mehrsprachige Unterstützung mit i18next. Wechseln Sie dynamisch zwischen Sprachen.",
-    "selectLanguage": "Sprache auswählen"
-  },
-  "components": {
-    "title": "UI-Komponenten",
-    "description": "Präsentation aller verfügbaren UI-Komponenten, erstellt mit Radix UI und Tailwind CSS.",
-    "button": {
-      "title": "Schaltflächen",
-      "variants": "Varianten:",
-      "sizes": "Größen:",
-      "default": "Standard",
-      "destructive": "Destruktiv",
-      "outline": "Umriss",
-      "secondary": "Sekundär",
-      "ghost": "Geist",
-      "link": "Link",
-      "small": "Klein",
-      "large": "Groß",
-      "icon": "Symbol"
-    },
-    "input": {
-      "title": "Eingabe",
-      "placeholder": "Text hier eingeben...",
-      "email": "E-Mail",
-      "emailPlaceholder": "email@beispiel.de"
-    },
-    "textarea": {
-      "title": "Textbereich",
-      "placeholder": "Geben Sie Ihre Nachricht ein..."
-    },
-    "select": {
-      "title": "Auswahl",
-      "placeholder": "Wählen Sie eine Option",
-      "option1": "Option 1",
-      "option2": "Option 2",
-      "option3": "Option 3"
-    },
-    "tooltip": {
-      "title": "Tooltip",
-      "hover": "Bewegen Sie die Maus hierher",
-      "message": "Dies ist ein Tooltip!"
-    },
-    "toast": {
-      "title": "Toast-Benachrichtigungen",
-      "trigger": "Toast anzeigen",
-      "message": "Dies ist eine Toast-Benachrichtigung!",
-      "description": "Sie können dies für Warnungen und Bestätigungen verwenden."
-    }
-  },
-  "dependencies": {
-    "title": "Tech-Stack & Abhängigkeiten",
-    "description": "Diese Vorlage wurde mit den folgenden Technologien erstellt:",
-    "core": "Kern",
-    "ui": "UI & Styling",
-    "routing": "Routing",
-    "stateManagement": "Zustandsverwaltung",
-    "forms": "Formulare & Validierung",
-    "http": "HTTP-Client",
-    "animation": "Animation",
-    "i18n": "Internationalisierung",
-    "devTools": "Entwicklung"
   }
 }

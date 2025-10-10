@@ -15,7 +15,7 @@ export function ExperienceSection() {
   }>;
 
   return (
-    <section id='experience' className='container space-y-8 py-20 max-w-7xl'>
+    <section id='experience' className='container space-y-8 py-20 max-w-7xl px-5'>
       <SectionHeading title={t('experience.title')} />
       <div className='grid gap-6 md:grid-cols-2'>
         {entries.map((entry, index) => (

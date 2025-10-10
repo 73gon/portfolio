@@ -3,7 +3,7 @@
     "name": "Malik",
     "role": "Full Stack Developer - AI Engineer",
     "location": "Cologne, Germany",
-    "description": "Just a developer who loves to code"
+    "description": "Web, Robotics & AI"
   },
   "nav": {
     "home": "About Me",
@@ -15,7 +15,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "headline": "Hi, I'm Malik. I love to code random stuff",
+    "headline": "Hey, I'm Malik — I build smart and beautiful things for the web.",
     "intro": "Hey, I'm a 22-year-old full-stack dev and AI engineer who's all about building cool, fast, and awesome digital stuff. I geek out on solving tricky problems with AI magic and turning ideas into epic solutions!",
     "availability": "Currently available for hire"
   },
@@ -36,14 +36,14 @@
       {
         "title": "Master of Science in Computer Science",
         "institution": "Heinrich Heine University Düsseldorf",
-        "period": "2025 - 2027",
-        "summary": "Focused on software engineering, algorithms, and data structures. Graduated with honors and completed a thesis on distributed systems and microservices architecture."
+        "period": "2025 - Present",
+        "summary": "Specializing in Artificial Intelligence and Deep Learning. Focused on advanced neural network architectures, model optimization, and real-world AI deployment."
       },
       {
         "title": "Bachelor of Science in Information Systems",
         "institution": "University of Cologne",
         "period": "2021 - 2024",
-        "summary": "Advanced studies in cloud computing, machine learning, and modern web architectures. Research focused on scalable application design and performance optimization."
+        "summary": "Completed a broad curriculum covering software development, databases, and web technologies. Built a strong foundation in computer science and data-driven systems."
       }
     ]
   },
@@ -51,22 +51,22 @@
     "title": "Work Experience",
     "entries": [
       {
-        "role": "CO-Founder & Full Stack Developer",
+        "role": "Co-Founder & Full Stack Developer",
         "company": "Blackboard",
-        "period": "2025 - Today",
-        "description": "Developed and maintained multiple client-facing applications. Implemented CI/CD pipelines and reduced deployment time by 60%. Collaborated with cross-functional teams to deliver high-quality products."
+        "period": "October 2025 - Present",
+        "description": "Building a full-stack web app for teachers using React, TypeScript, and Tailwind. Leading product architecture, deployment setup, and UI/UX direction."
       },
       {
-        "role": "Full Stack Developer",
+        "role": "Full Stack Engineer",
         "company": "Brainseed Factory",
-        "period": "2025 - Today",
-        "description": "Built responsive and accessible web interfaces using modern frameworks. Improved page load times by 40% through optimization techniques. Worked closely with designers to implement pixel-perfect UIs."
+        "period": "January 2025 - Present",
+        "description": "Developed frontend of monamy.ai with React, TypeScript, and Tailwind. Integrated backend APIs, optimized performance, and ensured design consistency."
       },
       {
-        "role": "Engineer (previously Application Manager)",
-        "company": "Simplify Services",
-        "period": "2022 - Today",
-        "description": "Contributed to the development of a SaaS platform. Gained experience in agile methodologies and version control. Participated in code reviews and team knowledge sharing sessions."
+        "role": "Engineer (formerly Application Manager)",
+        "company": "Simplify-Services",
+        "period": "August 2022 - Present",
+        "description": "Maintaining and extending backend systems, web widgets, and APIs. Managing deployments, improving scalability, and collaborating on process optimization."
       }
     ]
   },
@@ -92,16 +92,6 @@
         "name": "Node.js Application Developer",
         "issuedBy": "OpenJS Foundation",
         "year": "2021"
-      },
-      {
-        "name": "MongoDB Certified Developer",
-        "issuedBy": "MongoDB Inc.",
-        "year": "2021"
-      },
-      {
-        "name": "Professional Scrum Master I",
-        "issuedBy": "Scrum.org",
-        "year": "2020"
       }
     ]
   },
@@ -111,27 +101,27 @@
     "groups": [
       {
         "label": "Frontend",
-        "items": ["React", "TypeScript", "Tailwind CSS", "Redux", "Framer Motion", "React Query", "Zustand", "Vite"]
+        "items": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "React Query", "Zustand", "Vite"]
       },
       {
         "label": "Backend",
-        "items": ["Node.js", "Express", "NestJS", "Python", "Django", "FastAPI", "GraphQL", "REST API", "WebSocket", "Microservices"]
+        "items": ["Node.js", "Express", "Python", "Django", "FastAPI", "REST API"]
       },
       {
         "label": "Database",
-        "items": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "DynamoDB", "Prisma", "TypeORM", "Supabase"]
+        "items": ["PostgreSQL", "MongoDB", "MySQL"]
       },
       {
         "label": "DevOps",
-        "items": ["Docker", "Kubernetes", "AWS", "Google Cloud", "CI/CD", "GitHub Actions", "Terraform", "Nginx", "Linux"]
+        "items": ["Docker", "AWS", "CI/CD", "GitHub Actions", "Linux"]
       },
       {
         "label": "Testing",
-        "items": ["Jest", "Vitest", "Playwright", "Cypress", "React Testing Library", "Unit Testing", "E2E Testing"]
+        "items": []
       },
       {
         "label": "Tools",
-        "items": ["Git", "VS Code", "Figma", "Postman", "Jira", "Slack", "Notion", "Linear"]
+        "items": ["Git", "Figma", "Postman", "Slack", "VS Code"]
       }
     ]
   },
@@ -140,40 +130,34 @@
     "description": "Some of my recent work and side projects",
     "entries": [
       {
-        "name": "E-Commerce Platform",
-        "description": "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard. Built for scalability with microservices architecture.",
-        "tech": ["React", "Node.js", "PostgreSQL", "Redis", "Stripe"],
-        "url": "https://github.com"
+        "name": "React Template Starter",
+        "description": "A pre-configured React + Vite + Tailwind template featuring ShadCN UI, Lucide icons, Framer Motion, and dark mode support. Built to speed up new project setups with clean architecture and reusable components.",
+        "tech": ["React", "Vite", "TailwindCSS", "ShadCN", "Lucide", "TypeScript"],
+        "url": "https://github.com/73gon/template-react"
       },
       {
-        "name": "Real-Time Chat Application",
-        "description": "WebSocket-based chat application with rooms, private messaging, file sharing, and online presence indicators. Supports 10,000+ concurrent users.",
-        "tech": ["Next.js", "Socket.io", "MongoDB", "AWS"],
-        "url": "https://github.com"
+        "name": "Islamic Stories Platform",
+        "description": "A modern web platform to explore and read stories of the Prophets with elegant UI and accessible design. Focused on readability and structured narrative presentation.",
+        "tech": ["Next.js", "TailwindCSS", "TypeScript"],
+        "url": "https://github.com/73gon"
       },
       {
-        "name": "AI-Powered Content Generator",
-        "description": "SaaS platform that uses AI to generate marketing content, blog posts, and social media captions. Integrated with OpenAI API and includes payment processing.",
-        "tech": ["React", "Python", "FastAPI", "OpenAI", "PostgreSQL"],
-        "url": "https://github.com"
+        "name": "Blackboard",
+        "description": "A full-stack web app for teachers to create, manage, and share worksheets powered by AI. Includes file management, worksheet generation, and collaborative tools.",
+        "tech": ["React", "TypeScript", "TailwindCSS", "Node.js", "OpenAI API"],
+        "url": "https://github.com/73gon"
       },
       {
-        "name": "Project Management Tool",
-        "description": "Collaborative project management application with kanban boards, Gantt charts, time tracking, and team collaboration features. Mobile-responsive design.",
-        "tech": ["Vue.js", "NestJS", "GraphQL", "MongoDB"],
-        "url": "https://github.com"
+        "name": "Monamy.ai",
+        "description": "An AI-driven call center platform for managing customer interactions, contact data, and automated responses. Built with focus on scalability, performance, and real-time communication.",
+        "tech": ["React", "TypeScript", "TailwindCSS", "Node.js", "AI APIs"],
+        "url": "https://monamy.ai"
       },
       {
-        "name": "Fitness Tracking App",
-        "description": "Mobile-first web application for tracking workouts, nutrition, and progress. Includes data visualization, goal setting, and social features.",
-        "tech": ["React Native", "Express", "PostgreSQL", "AWS"],
-        "url": "https://github.com"
-      },
-      {
-        "name": "Portfolio Template Builder",
-        "description": "A no-code platform for creating beautiful portfolio websites. Users can choose templates, customize colors, and deploy with one click.",
-        "tech": ["Next.js", "Tailwind", "Supabase", "Vercel"],
-        "url": "https://github.com"
+        "name": "Hotel Websites",
+        "description": "Developed and deployed two professional hotel websites — HotelRHD.de and BestCologne.de — with responsive layouts, booking integrations, and optimized SEO performance.",
+        "tech": ["WordPress", "PHP", "TailwindCSS", "Vite"],
+        "url": "https://hotelrhd.de"
       }
     ]
   },
@@ -192,79 +176,11 @@
   "footer": {
     "tagline": "Crafting digital experiences with passion and precision",
     "builtWith": "Built with React, TypeScript, and Tailwind CSS",
-    "rights": "© {{year}} Malik. All rights reserved.",
+    "rights": "© {{year}} Ryqo. All rights reserved.",
     "social": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
       "x": "X"
     }
-  },
-  "darkMode": {
-    "title": "Dark Mode",
-    "description": "Toggle between light, dark, and system themes using next-themes with seamless transitions."
-  },
-  "translation": {
-    "title": "Internationalization",
-    "description": "Multi-language support with i18next. Switch between languages dynamically.",
-    "selectLanguage": "Select Language"
-  },
-  "components": {
-    "title": "UI Components",
-    "description": "Showcase of all available UI components built with Radix UI and Tailwind CSS.",
-    "button": {
-      "title": "Buttons",
-      "variants": "Variants:",
-      "sizes": "Sizes:",
-      "default": "Default",
-      "destructive": "Destructive",
-      "outline": "Outline",
-      "secondary": "Secondary",
-      "ghost": "Ghost",
-      "link": "Link",
-      "small": "Small",
-      "large": "Large",
-      "icon": "Icon"
-    },
-    "input": {
-      "title": "Input",
-      "placeholder": "Enter text here...",
-      "email": "Email",
-      "emailPlaceholder": "email@example.com"
-    },
-    "textarea": {
-      "title": "Textarea",
-      "placeholder": "Type your message..."
-    },
-    "select": {
-      "title": "Select",
-      "placeholder": "Select an option",
-      "option1": "Option 1",
-      "option2": "Option 2",
-      "option3": "Option 3"
-    },
-    "tooltip": {
-      "title": "Tooltip",
-      "hover": "Hover me",
-      "message": "This is a tooltip!"
-    },
-    "toast": {
-      "title": "Toast Notifications",
-      "trigger": "Show Toast",
-      "message": "This is a toast notification!",
-      "description": "You can use this for alerts and confirmations."
-    }
-  },
-  "dependencies": {
-    "title": "Tech Stack & Dependencies",
-    "description": "This template is built with the following technologies:",
-    "core": "Core",
-    "ui": "UI & Styling",
-    "routing": "Routing",
-    "stateManagement": "State Management",
-    "forms": "Forms & Validation",
-    "http": "HTTP Client",
-    "animation": "Animation",
-    "i18n": "Internationalization",
-    "devTools": "Development"
   }
 }

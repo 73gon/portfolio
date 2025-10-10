@@ -6,12 +6,12 @@ export function Footer() {
 
   return (
     <footer className='border-t border-border/60 bg-background/90'>
-      <div className='container flex flex-col gap-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between w-full mx-auto'>
-        <div className='space-y-2'>
+      <div className='container flex flex-col gap-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between w-full mx-auto px-5'>
+        <div className='space-y-2 text-center'>
           <p>{t('footer.rights', { year })}</p>
         </div>
         <div className='flex flex-col gap-2 text-xs uppercase tracking-wide md:text-right'>
-          <nav className='flex gap-4 md:justify-end'>
+          <nav className='flex gap-4 justify-center md:justify-end'>
             <a href='https://github.com/73gon' target='_blank' rel='noreferrer' className='hover:text-foreground'>
               {t('footer.social.github')}
             </a>

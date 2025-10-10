@@ -1,7 +1,7 @@
 import { type FormEvent, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { toast } from 'sonner';
+import { toast } from '@/components/ui/Toast';
 
 import { SectionHeading } from '@/components/section-heading';
 import { Button } from '@/components/ui/button';
@@ -64,7 +64,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id='contact' className='container space-y-8 py-20 pb-32 max-w-7xl'>
+    <section id='contact' className='container space-y-8 py-20 pb-32 max-w-7xl px-5'>
       <SectionHeading title={t('contact.title')} description={t('contact.subtitle')} />
       <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.45 }}>
         <Card className='shadow-md'>
@@ -98,6 +98,15 @@ export function ContactSection() {
                 {isSubmitting ? 'Sending...' : t('actions.sendMessage')}
               </Button>
             </form>
+            <button
+              onClick={() => {
+                toast.success('This is success message');
+                toast.error('This is an error message');
+                toast.info('This is an info message');
+              }}
+            >
+              Show Toasts
+            </button>
           </CardContent>
         </Card>
       </motion.div>
