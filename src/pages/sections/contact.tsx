@@ -98,15 +98,6 @@ export function ContactSection() {
                 {isSubmitting ? 'Sending...' : t('actions.sendMessage')}
               </Button>
             </form>
-            <button
-              onClick={() => {
-                toast.success('This is success message');
-                toast.error('This is an error message');
-                toast.info('This is an info message');
-              }}
-            >
-              Show Toasts
-            </button>
           </CardContent>
         </Card>
       </motion.div>
