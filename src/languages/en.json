@@ -138,8 +138,8 @@
       {
         "name": "Islamic Stories Platform",
         "description": "A modern web platform to explore and read stories of the Prophets with elegant UI and accessible design. Focused on readability and structured narrative presentation.",
-        "tech": ["Next.js", "TailwindCSS", "TypeScript"],
-        "url": "https://github.com/73gon"
+        "tech": ["React", "Vite", "TailwindCSS", "ShadCN", "Lucide", "TypeScript", "TanStack"],
+        "url": "https://islam.ryqo.ai"
       },
       {
         "name": "Blackboard",
