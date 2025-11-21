@@ -12,7 +12,7 @@ export function HeroSection() {
   const { t } = useTranslation();
 
   const currentYear = new Date().getFullYear();
-  const totalProjects = 3;
+  const totalProjects = 5;
   const totalCertifications = 0;
 
   const fadeInUp = {
@@ -80,23 +80,16 @@ export function HeroSection() {
         </motion.div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.6, ease: 'easeOut' }} className='grid gap-6 sm:grid-cols-3'>
+      <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }} className='grid gap-6 sm:grid-cols-3'>
         {[
           { label: currentYear - 2022 + '+ ' + t('stats.experience'), hint: t('nav.experience') },
           { label: totalProjects + ' ' + t('stats.projects'), hint: t('nav.projects') },
           { label: totalCertifications + ' ' + t('stats.certified'), hint: t('nav.certifications') },
-        ].map((stat, index) => (
-          <motion.div
-            key={stat.label}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9 + index * 0.1, duration: 0.5 }}
-            whileHover={{ y: -4, transition: { duration: 0.2 } }}
-            className='group rounded-2xl border border-border/50 bg-card px-6 py-8 shadow-sm hover:shadow-lg hover:border-border transition-all cursor-default'
-          >
-            <p className='text-3xl font-bold mb-1 group-hover:scale-105 transition-transform'>{stat.label}</p>
+        ].map((stat) => (
+          <div className='group rounded-2xl border border-border/50 bg-card px-6 py-8 shadow-sm hover:shadow-lg hover:border-border transition-all cursor-default'>
+            <p className='text-3xl font-bold mb-1'>{stat.label}</p>
             <p className='text-xs uppercase tracking-[0.25em] text-muted-foreground'>{stat.hint}</p>
-          </motion.div>
+          </div>
         ))}
       </motion.div>
     </section>
